@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+
+<section class="legal-section">
+    <div class="legal-container">
+        <header class="legal-header">
+            <div class="hero-badge">Legal</div>
+            <h1 class="legal-title">Privacy <em>Policy</em></h1>
+            <p class="legal-meta">Last updated: October 13, 2026</p>
+        </header>
+
+        <div class="legal-card">
+            <p class="legal-intro">
+                Your financial data is personal. This Privacy Policy explains what
+                information Spendly collects, how we use it, and the choices you
+                have. By using Spendly, you agree to the practices described here.
+            </p>
+
+            <h2 class="legal-heading">1. Data We Collect</h2>
+            <p>We collect only what we need to run the service:</p>
+            <ul>
+                <li><strong>Account information</strong> — your name, email address and a hashed version of your password.</li>
+                <li><strong>Expense records</strong> — the amounts, categories, dates and descriptions you choose to enter.</li>
+                <li><strong>Session data</strong> — a session cookie that keeps you signed in while you use the app.</li>
+            </ul>
+            <p>
+                We do not collect bank account details, card numbers or payment
+                information. Spendly never connects to your bank.
+            </p>
+
+            <h2 class="legal-heading">2. How We Use Your Data</h2>
+            <p>Your data is used solely to provide and improve Spendly, including to:</p>
+            <ul>
+                <li>Create and secure your account and sign you in.</li>
+                <li>Store, display and summarise your expenses, such as category breakdowns and date-filtered views.</li>
+                <li>Respond to questions or support requests you send us.</li>
+            </ul>
+            <p>
+                We do not sell, rent or trade your personal or financial data, and
+                we do not use it for advertising.
+            </p>
+
+            <h2 class="legal-heading">3. Data Storage</h2>
+            <p>
+                Your account and expense data are stored in Spendly's database.
+                Passwords are hashed before they are saved and are never stored in
+                plain text. We take reasonable measures to protect your data, but
+                no method of storage or transmission is completely secure.
+            </p>
+            <p>
+                We keep your data for as long as your account is active. You can
+                delete individual expenses at any time, and deleting your account
+                removes your associated expense records.
+            </p>
+
+            <h2 class="legal-heading">4. Third Party Services</h2>
+            <p>
+                Spendly loads its fonts from Google Fonts. When a page loads, your
+                browser requests these fonts from Google's servers, which means
+                Google may receive technical information such as your IP address.
+                Google's handling of that information is governed by its own
+                privacy policy.
+            </p>
+            <p>
+                We do not share your account or expense data with any third
+                party, except where required by law.
+            </p>
+
+            <h2 class="legal-heading">5. Contact Us</h2>
+            <p>
+                If you have questions about this Privacy Policy or want to request
+                access to or deletion of your data, contact us at
+                <a class="legal-link" href="mailto:privacy@spendly.example">privacy@spendly.example</a>.
+            </p>
+            <p>
+                We may update this policy from time to time. Changes will be
+                reflected in the "Last updated" date at the top of this page.
+            </p>
+        </div>
+
+        <p class="legal-back">
+            <a href="{{ url_for('landing') }}">← Back to home</a>
+        </p>
+    </div>
+</section>
+
+{% endblock %}
